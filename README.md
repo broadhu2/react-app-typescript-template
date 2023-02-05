@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Using HTTPS in Development
+This app currently uses a [manual proxy configuration](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) (defined inside [`src/setupProxy.js`](./src/setupProxy.js)) to proxy requests to external APIs. If you want to connect to an API instance running over HTTPS, you can enable the CRA webpack dev server to use HTTPS with a self-signed certificate for localhost domain. See [CRA Docs](https://create-react-app.dev/docs/using-https-in-development/) for more details.
+
+1. Create a self-signed certificate for your OS. An easy way to do this is with the [`mkcert`](https://github.com/FiloSottile/mkcert) tool:
+    ```
+    mkdir .cert
+    cd .cert
+    mkcert -key-file key.pem -cert-file cert.pem -install localhost
+    ```
+1. Add the following properties to your root level `.env.development.local` file:
+    ```
+    HTTPS=true
+    SSL_CRT_FILE=.cert/cert.pem
+    SSL_KEY_FILE=.cert/key.pem
+    ```
+1. Allow self-signed certificates on localhost for your browser. In Chrome, type `chrome://flags/` into the URL bar, search for "localhost" and then set the value of the `Allow invalid certificates for resources loaded from localhost` flag to `Enabled`. You may need to reload the browser and refresh the page.
+
 ## Available Scripts
 
 In the project directory, you can run:
