@@ -14,7 +14,8 @@
     "stylelint-check": "stylelint-config-prettier-check",
     "lint": "concurrently \"yarn tsc\" \"yarn eslint\" \"yarn stylelint\"",
     "lint:fix": "concurrently \"yarn eslint --fix\" \"yarn stylelint --fix\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate": "plop --plopfile templates/plopfile.mjs"
   },
   "browserslist": {
     "production": [
@@ -61,6 +62,7 @@
     "http-proxy-middleware": "^2.0.3",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.0",
+    "plop": "^3.1.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "stylelint": "^14.16.1",
