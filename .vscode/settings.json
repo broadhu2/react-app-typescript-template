@@ -1,5 +1,5 @@
 {
-  "[javascript][javascriptreact][typescript][typescriptreact]": {
+  "[javascript][javascriptreact][typescript][typescriptreact][css][scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
@@ -10,5 +10,11 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ]
 }
