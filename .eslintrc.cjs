@@ -6,9 +6,11 @@ module.exports = {
   },
   ignorePatterns: ["build/**", "coverage/**"],
   extends: [
+    "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
   ],
