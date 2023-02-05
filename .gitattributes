@@ -1,0 +1,5 @@
+# https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#per-repository-settings
+
+# text=auto: Git will differentiate between text/binary files
+# eol=lf: Git will always convert line endings to LF on checkout. 
+* text=auto eol=lf
