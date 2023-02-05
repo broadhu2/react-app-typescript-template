@@ -1,0 +1,15 @@
+import { FC } from "react";
+
+import styles from "./{{pascalCase name}}.module.scss";
+
+interface {{pascalCase name}}Props {}
+
+const {{pascalCase name}}: FC<{{pascalCase name}}Props> = () => {
+{{#if (includes (kebabCase name) "-")}}
+  return <div className={styles["{{kebabCase name}}"]}>{{pascalCase name}}</div>;
+{{else}}
+  return <div className={styles.{{kebabCase name~}} }>{{pascalCase name}}</div>;
+{{/if}}
+};
+
+export default {{pascalCase name}};

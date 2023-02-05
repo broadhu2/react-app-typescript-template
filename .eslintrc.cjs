@@ -14,6 +14,12 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
   ],
+  rules: {
+    "import/no-anonymous-default-export": [
+      "error",
+      { allowAnonymousFunction: true },
+    ],
+  },
   settings: {
     react: { version: "detect" },
     "import/resolver": {
@@ -46,6 +52,7 @@ module.exports = {
         "import/namespace": "off",
         "import/default": "off",
         "import/no-named-as-default-member": "off",
+        "@typescript-eslint/no-empty-interface": "off",
         "@typescript-eslint/no-floating-promises": [
           "error",
           {
