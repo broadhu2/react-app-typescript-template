@@ -1,0 +1,28 @@
+{
+  "language": "en",
+  "allowCompoundWords": true,
+  "enabledLanguageIds": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "markdown",
+    "plaintext",
+    "scss",
+    "typescript",
+    "typescriptreact"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "build",
+    "coverage",
+    "vscode-extension",
+    ".git",
+    "yarn.lock"
+  ],
+  "words": [
+    "IIFE",
+    "TTFB"
+  ]
+}
