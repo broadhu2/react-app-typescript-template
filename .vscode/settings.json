@@ -16,5 +16,6 @@
   "stylelint.validate": [
     "css",
     "scss"
-  ]
+  ],
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
